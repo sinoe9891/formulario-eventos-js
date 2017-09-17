@@ -2,7 +2,6 @@ var texto = document.getElementById("texto_lineas");
 var boton = document.getElementById("botoncito");
 boton.addEventListener("click", dibujoPorClick );
 
-
 var d = document.getElementById("dibujito");
 var lienzo = d.getContext("2d");
 var lineas = 30;
@@ -42,5 +41,6 @@ function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal)
 
 function dibujoPorClick()
 {
-  alert("No me toques ahí");
+  var x = texto.value;
+  alert("No me toques ahí " + x);
 }
