@@ -3,6 +3,7 @@ var boton = document.getElementById("botoncito");
 boton.addEventListener("click", dibujoPorClick );
 
 var d = document.getElementById("dibujito");
+var ancho = d.width;
 var lienzo = d.getContext("2d");
 
 
@@ -25,16 +26,16 @@ function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal)
 function dibujoPorClick()
 {
   var x = parseInt(texto.value);
-  alert("No me toques ahí " + x);
-  var lineas = 30;
+  var lineas = x;
   var l = 0;
   var yi, xf;
   var xf1;
+  var espacio = ancho / lineas;
 
   for (var l = 0; l < lineas; l++)
   {
-    yi = 10 * l;
-    xf = 10 * (l + 1);
+    yi = espacio * l;
+    xf = espacio * (l + 1);
     xf1 = 300 - (l * 10);
     // Inf-Izquierda
     dibujarLinea("#981818", 0, yi, xf, 300);

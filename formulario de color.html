@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Dibujando con canvas</title>
+  </head>
+  <body>
+    <h1>Dibujo con canvas</h1>
+    <p>
+      Cuantas líneas quieres <br />
+      <input type="text" id="txt_lineas" />
+      <select id="slc_color">
+        <option value="red">Rojo</option>
+        <option value="blue">Azul</option>
+        <option value="lawngreen">Verde Claro</option>
+        <option value="yellow">Amarillo</option>
+        <option value="pink">Rosado</option>
+        <option value="darkorchid">Morado</option>
+      </select>
+      <input type="button" id="btn_darle" value="A darle!">
+    </p>
+    <canvas id="dibujito" width="300" height="300"></canvas>
+    <p>Así queda tu dibujito</p>
+    <script src="dibujo-color.js"></script>
+  </body>
+</html>
